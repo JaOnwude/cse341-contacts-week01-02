@@ -1,0 +1,9 @@
+### Get all contacts
+GET http://localhost:8080/contacts
+Content-Type: application/json
+
+###
+
+### Get a single contact by ID
+GET http://localhost:8080/contacts/69053b54341b008e89c7c1d1
+Content-Type: application/json
