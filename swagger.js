@@ -6,7 +6,7 @@ const doc = {
     description: 'API for contacts management',
     version: '1.0.0',
   },
-  host: 'localhost:8080',
+  host: 'https://cse341-contacts-week01-02.onrender.com',
   schemes: ['http'],
   basePath: '/contacts',
 };

@@ -22,13 +22,15 @@
 // });
 
 
-const express = require('express');
+const express = require('express'); 
+const cors = require('cors');
 const { initDb } = require('./database/connection');
 const contactsRoutes = require('./routes/contacts');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 // Serve Swagger UI
