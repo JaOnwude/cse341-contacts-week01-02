@@ -1,9 +1,50 @@
-### Get all contacts
+# ### Get all contacts
+# GET http://localhost:8080/contacts
+# Content-Type: application/json
+
+# ###
+
+# ### Get a single contact by ID
+# GET http://localhost:8080/contacts/69053b54341b008e89c7c1d1
+# Content-Type: application/json
+
+### GET all contacts
 GET http://localhost:8080/contacts
-Content-Type: application/json
 
 ###
 
-### Get a single contact by ID
+### GET one contact
 GET http://localhost:8080/contacts/69053b54341b008e89c7c1d1
+
+###
+
+### POST new contact
+POST http://localhost:8080/contacts
 Content-Type: application/json
+
+{
+  "firstName": "Okwudili",
+  "lastName": "Maduka",
+  "email": "okwudili_madukadu@gmail.com",
+  "favoriteColor": "purple",
+  "birthday": "1986-02-20"
+}
+
+###
+
+### PUT update contact
+PUT http://localhost:8080/contacts/69053b54341b008e89c7c1d1
+Content-Type: application/json
+
+{
+  "firstName": "Okwudili",
+  "lastName": "Maduka-New",
+  "email": "okwudili_maduka_new@gmail.com",
+  "favoriteColor": "pink",
+  "birthday": "1986-02-20"
+}
+
+###
+
+### DELETE contact
+DELETE http://localhost:8080/contacts/69053b54341b008e89c7c1d1
