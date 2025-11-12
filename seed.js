@@ -18,7 +18,7 @@ async function seed() {
     const db = client.db();
     await db.collection('contacts').deleteMany({});
     await db.collection('contacts').insertMany(contacts);
-    console.log('6 contacts seeded!');
+    console.log('7 contacts seeded!');
   } catch (err) {
     console.error(err);
   } finally {
